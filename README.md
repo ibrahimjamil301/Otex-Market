@@ -111,8 +111,11 @@ android-task-Ibrahim-Jamil/
 
 **Ibrahim Jamil**  
 📍 Cairo, Egypt  
-💻 Android Developer passionate about building clean, scalable, and user-friendly mobile apps.  
-📧 [ibrahimjamil301@gmail.com](mailto:ibrahimjamil301@gmail.com)
+💻 Android Developer passionate about building clean, scalable, and user-friendly mobile apps.
+
+📧 [ibrahimjamil301@gmail.com](mailto:ibrahimjamil301@gmail.com)  
+🔗 [GitHub Profile](https://github.com/ibrahimjamil301)  
+💼 [LinkedIn Profile](https://www.linkedin.com/in/ibrahim-jamil-15a501242/)
 
 
 ---
