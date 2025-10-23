@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.FiltringActivity"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/show_Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="55dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                >
+
+                <ImageView
+                    android:id="@+id/closeBtn"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="10"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/close_small" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="175dp"
+                    android:layout_height="35dp"
+                    android:text="فلترة"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="24sp"
+                    android:textColor="@color/black_l"
+                    android:layout_weight="80"
+                    />
+
+                <TextView
+                    android:id="@+id/resetBtn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="رجوع للأفتراضى"
+                    android:fontFamily="@font/tajawal_bold"
+                    android:textSize="18sp"
+                    android:layout_marginStart="42dp"
+                    android:textColor="@color/blue_color"
+                    android:layout_weight="700"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="32dp"
+                    android:textColor="@color/gray"
+                    android:text="الفئة" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/vector" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_l"
+                    android:text="@string/salesText" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="500"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="235dp"
+                    android:text="تغيير"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/tajawal_bold"
+
+                    android:textColor="@color/blue_color1"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginVertical="32dp"
+                android:background="@color/gray_background"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="32dp"
+                    android:src="@drawable/location_on" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locationText"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_l"
+                    android:layout_marginStart="18dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="400"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/chevron_backward" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginVertical="32dp"
+                android:background="@color/gray_background"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/textView01"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="الأقساط الشهرية" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layoutDirection="rtl"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="12dp"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/gray_bg_container" />
+
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="12dp"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/gray_bg_container" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView02"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="النوع" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView03"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="عدد الغرف" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRecyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView04"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="السعر" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layoutDirection="rtl"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/minPriceEditText1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="12dp"
+                    android:hint="أقل سعر"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_color"
+                    android:inputType="number"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/gray_bg_container" />
+
+                <EditText
+                    android:id="@+id/maxPriceEditText1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="12dp"
+                    android:hint="أقصى سعر"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_color"
+                    android:inputType="number"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/gray_bg_container" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView05"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="طريقه الدفع" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRecyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView06"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="18sp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="@color/gray"
+                    android:text="حاله العقار" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRecyclerView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/show_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/blue_button"
+        android:text="شاهد 10,000+ نتائج"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/tajawal_bold"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

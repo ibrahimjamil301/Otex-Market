@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Otex-App-Test</string>
+    <string name="underlined_text"><u>3000ج.م</u></string>
+    <string name="keep_txt1">تثبيت فى مقاول صحى</string>
+    <string name="salesText">عقارات \n<b><font color='#80000000' >فلل البيع</font></b> </string>
+    <string name="locationText">الموقع \n<b><font color='#80000000' >مصر</font></b> </string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/colorLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/itemTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:text="الفئات"
+        android:textColor="@color/gray_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:fontFamily="@font/tajawal_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/popular_container"/>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activites.PlansActivity"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/next_Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="32dp"
+                android:layoutDirection="rtl">
+
+                <ImageView
+                    android:id="@+id/backBtnMain"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/back_right"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اختر الباقات التي تناسبك"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="24sp"
+                    android:textColor="@color/blue_txt" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="أختار من باقات التمييز بالأسفل اللى تناسب أحتياجاتك"
+                android:fontFamily="@font/tajawal_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_color"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/plansRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                android:clipToPadding="false"
+                android:paddingBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/container_bg"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="باقات مخصصة لك"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_l"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تواصل معنا لأختيار الباقة المناسبة لك"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_l"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="فريق المبيعات"
+                    android:fontFamily="@font/tajawal_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue_color"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_color"
+        android:text="التالى"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tajawal_bold"
+        app:icon="@drawable/arrow_back1"
+        app:iconTint="@color/white"
+        app:iconPadding="8dp"
+        app:iconGravity="textEnd"
+        app:cornerRadius="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
