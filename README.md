@@ -1,4 +1,4 @@
-# Android Task — Ibrahim Jamil
+# Otex Market
 
 This project was developed by **Ibrahim Jamil** as part of an Android development task.  
 It showcases essential Android development concepts including UI design, data persistence, and modern app architecture using **Kotlin** and **MVVM**.
