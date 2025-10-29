@@ -60,6 +60,15 @@ android-task-Ibrahim-Jamil/
 - **Build System:** Gradle  
 
 ---
+## 🌟 Features
+
+- Store data locally using **Room Database**  
+- Follow the **MVVM** architecture for clean separation of concerns  
+- Perform background operations using **Coroutines**  
+- Observe live data changes through **LiveData**  
+- User-friendly and responsive UI built with **XML layouts**
+
+---
 
 ## 🚀 How to Run the Project
 
@@ -94,16 +103,6 @@ android-task-Ibrahim-Jamil/
 | Filtering1 Screen |
 |-------------------|
 | <img width="398" height="840" alt="Filtering1 Screen" src="https://github.com/user-attachments/assets/ae2972b2-af33-4957-8410-9caf9c6d2534" /> |
-
----
-
-## 🌟 Features
-
-- Store data locally using **Room Database**  
-- Follow the **MVVM** architecture for clean separation of concerns  
-- Perform background operations using **Coroutines**  
-- Observe live data changes through **LiveData**  
-- User-friendly and responsive UI built with **XML layouts**
   
 ---
 
@@ -116,7 +115,6 @@ android-task-Ibrahim-Jamil/
 📧 [ibrahimjamil301@gmail.com](mailto:ibrahimjamil301@gmail.com)  
 🔗 [GitHub Profile](https://github.com/ibrahimjamil301)  
 💼 [LinkedIn Profile](https://www.linkedin.com/in/ibrahim-jamil-15a501242/)
-
 
 ---
 
