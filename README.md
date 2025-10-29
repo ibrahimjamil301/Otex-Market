@@ -14,36 +14,40 @@ The app demonstrates how to build a clean, well-structured Android application f
 ## 🧩 App Structure
 
 ```
-android-task-Ibrahim-Jamil/
+Otex_Market/
 │
-├── .idea/ # Android Studio project settings
+├── .idea/                              # Android Studio project configuration files
 │
 ├── app/
 │ ├── src/
 │ │ ├── main/
 │ │ │ ├── java/com/example/androidtask/
-│ │ │ │ ├── data/
-│ │ │ │ │ ├── local/
-│ │ │ │ │ │ ├── entity/ # Data entities representing database tables
-│ │ │ │ │ │ ├── dao/ # Data Access Objects (Room DAO interfaces)
-│ │ │ │ │ │ └── AppDatabase.kt # Main Room database class
-│ │ │ │ │ └── repository/ # Repository layer connecting data sources
-│ │ │ │ ├── ui/
-│ │ │ │ │ ├── activities/ # Activities that represent app screens
-│ │ │ │ │ ├── adapter/ # RecyclerView Adapters
-│ │ │ │ │ ├── viewmodel/ # ViewModels handling business logic
-│ │ │ │ └── utils/ # Utility classes and helpers
-│ │ │ ├── res/ # Layouts, drawables, strings, etc.
-│ │ │ └── AndroidManifest.xml
+│ │ │ │ ├── data/                       # Data layer – manages all data operations (local or remote)
+│ │ │ │ │ ├── local/                    # Local data source (Room database)
+│ │ │ │ │ │ ├── entity/                 # Data entities representing tables in the Room database
+│ │ │ │ │ │ ├── dao/                    # Data Access Objects (DAO interfaces) for database queries
+│ │ │ │ │ │ └── AppDatabase.kt          # Main Room database class that defines the database instance
+│ │ │ │ │ └── repository/               # Repository layer – acts as a bridge between ViewModel and data sources
+│ │ │ │ │
+│ │ │ │ ├── ui/                         # Presentation layer – handles everything related to the user interface
+│ │ │ │ │ ├── activities/               # Activities representing app screens (e.g., MainActivity, CartActivity)
+│ │ │ │ │ ├── adapter/                  # RecyclerView adapters responsible for displaying lists of items
+│ │ │ │ │ ├── viewmodel/                # ViewModels that hold and manage UI-related data in a lifecycle-conscious way
+│ │ │ │ │
+│ │ │ │ └── utils/                      # Utility and helper classes (e.g., constants, formatters, shared functions)
+│ │ │ │
+│ │ │ ├── res/                          # Resources – layouts, drawables, strings, colors, etc.
+│ │ │ └── AndroidManifest.xml           # Manifest file defining app structure, permissions, and components
+│ │ │
 │ │
-│ ├── build.gradle.kts
-│ └── proguard-rules.pro
+│ ├── build.gradle.kts                  # App-level Gradle configuration (dependencies, plugins, build setup)
+│ └── proguard-rules.pro                # ProGuard rules for code shrinking and obfuscation
 │
-├── gradle/ # Gradle wrapper files
-├── screenshots/ # App screenshots (to be added)
-├── build.gradle.kts # Project-level Gradle configuration
-├── settings.gradle.kts
-└── gradle.properties
+├── gradle/                             # Gradle wrapper files (to ensure consistent builds across systems)
+├── screenshots/                        # Folder for app screenshots (used in documentation or README)
+├── build.gradle.kts                    # Project-level Gradle configuration
+├── settings.gradle.kts                 # Project module inclusion and Gradle setup
+└── gradle.properties                   # Global Gradle configuration (e.g., JVM settings, version configs)
 
 ```
 
